@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yazlab2.pkg1.pkg1deneme.FXMLDocumentController">
+   <children>
+      <ImageView id="img_okunanFis" fx:id="img_okunanFis" fitHeight="361.0" fitWidth="328.0" layoutX="60.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Fisler/output.jpg" />
+         </image></ImageView>
+      <Label id="lbl_okunanFis" layoutX="171.0" layoutY="414.0" prefHeight="22.0" prefWidth="101.0" text="Okunan Fiş">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane id="pane_parsedData" layoutX="458.0" layoutY="30.0" prefHeight="361.0" prefWidth="316.0" />
+      <Label id="lbl_parsedData" layoutX="556.0" layoutY="414.0" prefHeight="22.0" prefWidth="153.0" text="Parse Edilen Veri">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label id="lbl_arama" layoutX="968.0" layoutY="64.0" prefHeight="30.0" prefWidth="85.0" text="Arama">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField id="tbx_isletmeAdi" fx:id="tbx_isletmeAdi" layoutX="968.0" layoutY="133.0" prefHeight="25.0" prefWidth="203.0" AnchorPane.rightAnchor="50.0" />
+      <TextField id="tbx_tarih" fx:id="tbx_tarih" layoutX="968.0" layoutY="229.0" prefHeight="25.0" prefWidth="203.0" AnchorPane.rightAnchor="50.0" />
+      <Label id="lbl_isletmeAdi" layoutX="837.0" layoutY="134.0" text="İşletme Adı">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="862.0" layoutY="228.0" text="Tarih">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView id="tbl_database" fx:id="tbl_database" layoutX="60.0" layoutY="454.0" prefHeight="389.0" prefWidth="1115.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="454.0">
+        <columns>
+          <TableColumn id="clm_isletmeAdi" fx:id="clm_isletmeAdi" prefWidth="212.0" text="İşletme Adı" />
+          <TableColumn id="clm_tarih" fx:id="clm_tarih" prefWidth="171.0" text="Tarih" />
+            <TableColumn id="clm_fisNo" fx:id="clm_fisNo" prefWidth="170.0" text="Fiş No" />
+            <TableColumn id="clm_urunler" fx:id="clm_urunler" prefWidth="188.0" text="Ürünler" />
+            <TableColumn id="clm_kdv" fx:id="clm_kdv" prefWidth="162.0" text="KDV" />
+            <TableColumn id="clm_toplamFiyat" fx:id="clm_toplamFiyat" prefWidth="208.0" text="Toplam Fiyat" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
